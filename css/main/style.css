@@ -1,0 +1,369 @@
+/* MAIN STYLE */ 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 40px;
+    background: linear-gradient(180deg, #1E414D 0%, #0D2F3A 100%);
+}
+
+.fixed-navigation-left-side {
+    width: 275px;
+    min-height: 100vh;
+    background: #052A36;
+    position: fixed;
+}
+
+.main-content-side {
+    display: block;
+    height: 100%;
+    width: calc(100% - 675px);
+    padding-left: 200px;
+    margin-right: 200px;
+    margin-left: auto;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+}
+
+.menu-block-list {
+    width: 100%;
+    display: block;
+}
+
+.div-block {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.div-block:hover {
+    background: linear-gradient(180deg, #085973 0%, #1A7896 100%);
+    transition: all 0.3s ease;
+}
+
+
+.div-block {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.preview-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.main-heading {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+.preview-block-side {
+    display: block;
+    width: 50%;
+}
+
+.preview-block-side:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-block-side p {
+    font-weight: 300;
+    color: white;
+    line-height: 37px;
+
+}
+
+.block-heading {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.content-block {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.content-block:last-child {
+    margin-bottom: 0px;
+}
+
+.about-us {
+    font-weight: 300;
+    color: white;
+    line-height: 37px;
+}
+
+.box-team {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teammate-item {
+    width: 25%;
+    height: 420px;
+    border-radius: 30px;
+    background-color: white;
+    padding-top: 30px;
+}
+
+.teammate-item a {
+    width: 100%;
+    color: black;
+    font-weight: 700;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img-teammate-item {
+    width: 155px;
+    height: 155px;
+    border-radius: 77.5px;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.teammate-item p {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-go-teammate {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 40px auto 0 auto;
+    background: linear-gradient(180deg, #23AAE3 0%, #178898 100%);
+}
+
+.btn-go-teammate a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.form-subscribe {
+    width: calc(100% - 80px);
+    padding: 40px;
+    margin: 0px;
+    border-radius: 30px;
+    height: auto;
+    background: #084254;
+}
+
+.form-heading {
+    font-size: 23px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.btn-main-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(180deg, #23AAE3 0%, #178898 100%);
+    padding: 20px;
+    color: white;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.box-form-info {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.box-form-info span {
+    color: white;
+    font-weight: 400;
+}
+
+.box-form-info span::after {
+    content: ":";
+}
+
+.input-form {
+    color: black;
+    width: 100%;
+    height: 55px;
+    border: 3px solid #198FD1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+}
+
+
+/* MEDIA */
+
+@media screen and (max-width: 1600px) {
+    .teammate-item {
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .main-heading {
+        font-size: 50px;
+    }
+
+    .main-content-side {
+        width: calc(100% - 475px);
+        padding-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .main-content-side {
+        width: calc(100% - 375px);
+        padding-left: 50px;
+        margin-right: 50px;
+    }
+
+    .block-heading {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .fixed-navigation-left-side {
+        width: 210px;
+    }
+
+    .main-content-side {
+        width: calc(100% - 300px);
+    }
+
+    .preview-block {
+        display: block;
+    }
+    
+    .preview-block-side p {
+        font-weight: 300;
+        color: white;
+        line-height: 37px;
+    
+    }
+
+    .preview-block-side {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .box-team {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+
+    .teammate-item {
+        width: calc(50% - 30px);
+        margin: 0 15px 30px;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fixed-navigation-left-side {
+        width: 100%;
+        min-height: auto;
+    }
+    .menu-block-list {
+        display: none;
+    }
+    .logo-wrapper {
+        padding: 15px 0 15px 0;
+    }
+
+    .main-content-side {
+        width: calc(100% - 100px);
+        padding-left: 50px;
+        margin-right: 50px;
+    }
+
+    .preview-block-side:last-child {
+        display: block;
+    }
+
+    .block-heading {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .teammate-item {
+        width: calc(100% - 0px);
+        margin: 0 0px 30px;   
+    }
+
+    .block-heading {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .preview-block-side p {
+        font-size: 13px;
+    }
+
+    .main-heading {
+        font-size: 40px;
+    }
+
+    .main-content-side {
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        margin-right: 20px;
+    }
+}
